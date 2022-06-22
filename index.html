@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my first website">
+    <meta name="keyword" content="HTML,CSS,PHP,developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class='main d-flex justify-content-center align-items-center'>
+    <div class="container content  pt-5 px-5 position-relative mb-3">
+        <form novalidate id="ticket-form">
+            <div class="row position-relative justify-content-center">
+                <h3 class="text-dark text-center mb-5">Ticket Sales System</h3>
+                <div class="col-md-5 mb-3">
+                    <input class="form-control check-value" placeholder="First Name" onkeyup="show_message(this)" >
+                    <div class="warning text-white">
+                        &starf;Invalid First Name!
+                    </div>
+                    <div class="success text-white">
+                        &starf;Looks good!
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <input class="form-control check-value" placeholder="Last Name" onkeyup="show_message(this)">
+                    <div class="warning text-white">
+                        &starf;Invalid Last Name!
+                    </div>
+                    <div class="success text-white">
+                        &starf;Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 position-relative justify-content-center">
+                <div class="col-md-5 mb-3">
+                    <input class="form-control check-value" placeholder="Phone Number" onkeyup="show_message(this)" >
+                    <div class="warning text-white">
+                        &starf;Invalid Phone Number!
+                    </div>
+                    <div class="success text-white">
+                        &starf;Looks good!
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <input class="form-control check-value" placeholder="Email" type="email" onkeyup="show_message(this)">
+                    <div class="warning text-white">
+                        &starf;Invalid Email!
+                    </div>
+                    <div class="success text-white">
+                        &starf;Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 position-relative justify-content-center">
+                <div class="col-md-5 mb-3">
+                    <select id="country"  class="form-select ">
+                        <option value="default" selected="selected">Please Select...</option>
+                        <option value="iran">Iran</option>
+                        <option value="usa">United State</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                    <div class="text-white" id="country-invalid">
+                        &starf;Invalid Country Name!
+                    </div>
+                    <div class="text-white" id="country-valid">
+                        &starf;Looks good!
+                    </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <select id="city" class="form-select ">
+                        <option value="default" >Select City...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button d-flex justify-content-center mt-1 mb-2 position-relative">
+                <input type="submit" class="btn btn-warning" value="Book a Ticket">
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<script src="javascript/bootstrap.bundle.min.js"></script>
+<script src="javascript/Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url(../paul-hanaoka-s0XabTAKvak-unsplash.jpg) no-repeat center center/cover;
+}
+
+.content{
+    width: 80%;
+    height: auto;
+
+}
+.content:before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0.5;
+    display: inline-block;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: 0;
+}
+.row,.button{
+    z-index: 2;
+}
+
+.warning,.success,#country-invalid,#country-valid{
+    display: none;
+    border-radius: 7px;
+    padding: 0.4rem;
+    color: white;
+}
+#country-valid,.success{
+    background:#15572e ;
+}
+#country-invalid,.warning{
+    background: red;
+}
+.red-border{
+    border-color: red;
+}
+.green-border{
+    border-color: #15572e;
+}
