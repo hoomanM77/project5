@@ -66,7 +66,7 @@ ticketForm.addEventListener('submit',function (event) {
         validation=arr.every(function (item) {
             return isNaN(item.value)
         })
-        if(validation){
+        if(!validation){
             if(countrySelectTag.value ==='default'){
                 show_invalid_country_message()
                 event.preventDefault()
